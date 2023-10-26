@@ -1,13 +1,30 @@
 {
-  "name": "docker-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "npm run build"
-  },
-  "author": "Dana Woodman <dana@danawoodman.com> (http://danawoodman.com/)",
-  "license": "ISC"
+    "name": "stc-pre-rendering",
+    "version": "1.0.0",
+    "description": "Pre Rendering STC eCommerce Web Page",
+    "main": "app.js",
+    "scripts": {
+        "launch": "NODE_ENV=production node app.js",
+        "start": "NODE_ENV=development node app.js",
+        "lint": "eslint **/*.js",
+        "test": "mocha --timeout 20000"
+    },
+    "author": "",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "dotenv": "^7.0.0",
+        "http": "0.0.0",
+        "memcached": "^2.2.2",
+        "puppeteer": "^1.14.0",
+        "request": "^2.88.0",
+        "winston": "^3.2.1",
+        "winston-daily-rotate-file": "^3.8.0",
+        "xml2js": "^0.4.19"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "eslint": "^6.7.2",
+        "mocha": "^6.1.4"
+    }
 }

@@ -8,6 +8,7 @@
         "start": "NODE_ENV=development node app.js",
         "lint": "eslint **/*.js",
         "test": "mocha --timeout 20000"
+        "build": "npm run build"
     },
     "author": "",
     "license": "UNLICENSED",
